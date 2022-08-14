@@ -66,24 +66,6 @@
             <img src="@/assets/images/burger.webp" alt="block image">
           </template>
         </VSectionContent>
-        <VSectionContent :revert="true">
-          <template v-slot:title>
-            My BURGERS
-          </template>
-          <template v-slot:description>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit iste laudantium minus nostrum qui quidem
-            rem sit tempore voluptatem. Adipisci architecto atque deleniti id, inventore ipsa ipsum, laboriosam nesciunt
-            nulla provident quisquam recusandae reprehenderit sapiente similique temporibus veritatis voluptas.
-          </template>
-          <template v-slot:buttons>
-            <VButton>
-              Connect
-            </VButton>
-          </template>
-          <template v-slot:image>
-            <img src="@/assets/images/burger.webp" alt="block image">
-          </template>
-        </VSectionContent>
       </div>
     </div>
   </main>

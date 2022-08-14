@@ -6,7 +6,7 @@
 
 <script setup>
 import VHeader from '@/components/header/VHeader.vue'
-import VFooter from '@/components/VFooter.vue'
+import VFooter from '@/components/footer/VFooter.vue'
 import {onMounted, ref} from "vue";
 
 
