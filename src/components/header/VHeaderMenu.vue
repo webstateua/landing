@@ -77,7 +77,7 @@ menu {
       cursor: pointer;
 
       &:hover {
-        width: 32px;
+        transform: scale(1.2);
       }
     }
   }

@@ -40,7 +40,13 @@ footer {
       gap: 20px;
 
       &__icon {
-        width: min(34px, 100%);
+        width: min(36px, 100%);
+        transition: .3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
