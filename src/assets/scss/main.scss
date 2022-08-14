@@ -9,7 +9,7 @@ html {
   font-family: 'Integral CF', sans-serif;
   font-style: normal;
   color: $white;
-  background: #2D323F;;
+  background: #2D323F;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
 
 //   word-break: break-word;

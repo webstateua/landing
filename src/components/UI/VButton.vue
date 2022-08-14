@@ -1,6 +1,7 @@
 <template>
   <button class="btn"
-          :class="[props.primary ? 'primary' : props.secondary ? 'secondary' : '', props.customClass]">
+          :class="props.class"
+  >
     <slot name="leftIcon"/>
     <slot></slot>
     <slot name="rightIcon"/>
@@ -10,15 +11,7 @@
 <script setup>
 
 const props = defineProps({
-  primary: {
-    type: Boolean,
-  default: false
-  },
-  secondary: {
-    type: Boolean,
-  default: false
-  },
-  customClass: {
+  class: {
     type: String,
   default: ''
   },
@@ -29,10 +22,13 @@ const props = defineProps({
 <style lang="scss">
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Integral CF', sans-serif;
   font-style: normal;
   min-width: 211px;
-  border-radius: 12px;
+  border-radius: 24px;
   height: 45px;
   font-size: 15px;
   font-weight: 400;
@@ -41,15 +37,12 @@ const props = defineProps({
   padding: 13.5px 30px;
   border-style: none;
   cursor: pointer;
+  background: #000;
+  color: #FFFFFF;
+  transition: .6s ease-in-out;
 
-  &.yellow {
-    background: $yellow;
-    color: $black;
-  }
-
-  &.blue {
-    background: $blue;
-    color: $white;
+  &:hover {
+    background: rgba(145, 138, 138, 0.8);
   }
 }
 
