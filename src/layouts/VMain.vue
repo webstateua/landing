@@ -84,6 +84,11 @@
         </VSectionContent>
       </div>
     </div>
+    <VSectionFaq :blocks="questions">
+      <template v-slot:title>
+        Have a question?
+      </template>
+    </VSectionFaq>
   </main>
 </template>
 
@@ -92,6 +97,7 @@ import { reactive } from "vue";
 import VSectionContent from '@/components/sections/VSectionContent.vue'
 import VSectionTitle from '@/components/sections/VSectionTitle.vue'
 import VSectionMultiBlocks from '@/components/sections/VSectionMultiBlocks.vue'
+import VSectionFaq from '@/components/sections/VSectionFaq.vue'
 import VCarousel from '@/components/VCarousel.vue'
 import burger1 from '@/assets/images/burgers/8aa7d9e5429b506212a04d2bbf5916b1_1.webp'
 import burger2 from '@/assets/images/burgers/233de757428d5e4889fbe482971caf10.webp'
@@ -99,6 +105,7 @@ import burger3 from '@/assets/images/burgers/2115018_1644510398.1914_original.we
 import burger4 from '@/assets/images/burgers/burger-vegan_1.webp'
 import service1 from '@/assets/images/services/becon.webp'
 import service3 from '@/assets/images/services/donat.webp'
+
 
 
 
@@ -146,6 +153,38 @@ const blocks = reactive([
     title: 'Good mood',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
     img: service1,
+  },
+])
+const questions = reactive([
+  {
+    id: 1,
+    question: 'Who are u ?',
+    answer: 'We are Web State'
+  },
+  {
+    id: 2,
+    question: 'What u can do?',
+    answer: 'We can do very beautyfull front-end'
+  },
+  {
+    id: 3,
+    question: 'Support 24/7',
+    answer: `We're on connect 24/7`
+  },
+  {
+    id: 4,
+    question: 'Support 24/7',
+    answer: `We're on connect 24/7`
+  },
+  {
+    id: 5,
+    question: 'Support 24/7',
+    answer: `We're on connect 24/7`
+  },
+  {
+    id: 6,
+    question: 'Support 24/7 owqjwefjwnjwefn',
+    answer: `We're on connect 24/7`
   },
 ])
 
