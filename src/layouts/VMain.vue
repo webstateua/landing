@@ -25,7 +25,7 @@
             nulla provident quisquam recusandae reprehenderit sapiente similique temporibus veritatis voluptas.
           </template>
         </VSectionContent>
-        <VSectionContent :class="'test'">
+        <VSectionContent>
           <template v-slot:title>
             My BURGERS
           </template>
@@ -61,7 +61,7 @@
             <img src="@/assets/images/burger.webp" alt="block image">
           </template>
         </VSectionContent>
-        <VSectionContent :class="'test'">
+        <VSectionContent>
           <template v-slot:title>
             My BURGERS
           </template>
@@ -79,6 +79,11 @@
             <img src="@/assets/images/burger.webp" alt="block image">
           </template>
         </VSectionContent>
+        <VSectionMultiBlocks :contents="blocks">
+          <template v-slot:title>
+            Our services
+          </template>
+        </VSectionMultiBlocks>
       </div>
     </div>
   </main>
@@ -88,11 +93,14 @@
 import { reactive } from "vue";
 import VSectionContent from '@/components/sections/VSectionContent.vue'
 import VSectionTitle from '@/components/sections/VSectionTitle.vue'
+import VSectionMultiBlocks from '@/components/sections/VSectionMultiBlocks.vue'
 import VCarousel from '@/components/VCarousel.vue'
 import burger1 from '@/assets/images/burgers/8aa7d9e5429b506212a04d2bbf5916b1_1.webp'
 import burger2 from '@/assets/images/burgers/233de757428d5e4889fbe482971caf10.webp'
 import burger3 from '@/assets/images/burgers/2115018_1644510398.1914_original.webp'
 import burger4 from '@/assets/images/burgers/burger-vegan_1.webp'
+import service1 from '@/assets/images/services/becon.webp'
+import service3 from '@/assets/images/services/donat.webp'
 
 
 
@@ -120,6 +128,26 @@ const sliders = reactive([
     title: 'Blackhole burger',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
     img: burger4,
+  },
+])
+const blocks = reactive([
+  {
+    id: 1,
+    title: 'Support 24/7',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
+    img: service1,
+  },
+  {
+    id: 2,
+    title: 'Delivery in bad weather',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
+    img: service3,
+  },
+  {
+    id: 3,
+    title: 'Good mood',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
+    img: service1,
   },
 ])
 

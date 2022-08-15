@@ -28,7 +28,7 @@ footer {
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 50px 0;
     box-sizing: border-box;
     font-size: 26px;
     color: $black;

@@ -1,6 +1,9 @@
 <template>
   <section class="section"
            :class="[props.class]">
+    <div class="section-background">
+      <img src="@/assets/images/burger.webp" alt="">
+    </div>
     <div class="section-title">
       <div class="section-title__title">
         <slot name="title"/>
@@ -29,21 +32,39 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 200px 20%;
-  background: url("@/assets/images/burger.webp") no-repeat 50% 0/cover;
+  position: relative;
+  //padding: 200px 20%;
+  //background: url("@/assets/images/burger.webp") no-repeat 50% 0/cover;
 
-  .section-title {
+  &-background {
+    height: 100vh;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(5px);
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     text-align: center;
+    letter-spacing: 5px;
 
     &__title {
-      font-size: 28px;
+      font-size: 48px;
     }
 
     &__description {
-      font-size: 18px;
+      font-size: 28px;
     }
   }
 }

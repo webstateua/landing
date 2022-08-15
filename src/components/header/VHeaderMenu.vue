@@ -55,6 +55,7 @@ menu {
       opacity: 1;
     }
   }
+
 }
 
 .desktop-menu {
@@ -69,6 +70,7 @@ menu {
     box-sizing: border-box;
     border-radius: 12px;
     background: rgba(255, 255, 255, 1);
+    transition: .6s ease-in-out;
 
     &__icon {
       max-width: 100%;
@@ -79,6 +81,10 @@ menu {
       &:hover {
         transform: scale(1.2);
       }
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 1);
     }
   }
 }
