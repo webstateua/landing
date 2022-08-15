@@ -7,7 +7,7 @@
            :key="slide.id"
            :id="slide.id"
            :style="
-           `width: ${ slide.id === props.sliders.length ? sliderWidth :sliderWidth }px;
+           `width: ${ slide.id === props.sliders.length ? sliderWidth : sliderWidth }px;
             transform: translateX(-${sliderPosition}px);`"
            >
 
@@ -45,7 +45,7 @@ import {onMounted, ref} from "vue";
 
 const sliderPosition = ref(0)
 const   selectedSlide = ref(1)
-const  sliderWidth = ref(345)
+const  sliderWidth = ref(525)
 const carousel = ref(null)
 
 const props = defineProps({
