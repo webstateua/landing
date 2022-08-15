@@ -17,7 +17,7 @@
             <div class="img_wrapper__prevBtn" @click="prevSlide(slide.id)">
               <img src="@/assets/images/icons/arrowLeft.png" alt="arrow">
             </div>
-            <img :src="`src/assets/images/${slide.img}.webp`"
+            <img :src="`/assets/images/${slide.img}.webp`"
                  class="slider_image"
                  alt="slider image">
             <div class="img_wrapper__nextBtn" @click="nextSlide(slide.id)">
