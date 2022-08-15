@@ -183,7 +183,7 @@ const questions = reactive([
   },
   {
     id: 6,
-    question: 'Support 24/7 owqjwefjwnjwefn',
+    question: 'Support 24/7',
     answer: `We're on connect 24/7`
   },
 ])
