@@ -102,7 +102,7 @@ const sliders = reactive([
     id: 1,
     title: 'Title 1',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: './assets/images/burger.webp',
+    img: burger,
   },
   {
     id: 2,
