@@ -17,7 +17,7 @@
             <div class="img_wrapper__prevBtn" @click="prevSlide(slide.id)">
               <img src="@/assets/images/icons/arrowLeft.png" alt="arrow">
             </div>
-            <img :src="setImg(slide.img)"
+            <img :src="imageUrl(slide.img)"
                  class="slider_image"
                  alt="slider image">
             <div class="img_wrapper__nextBtn" @click="nextSlide(slide.id)">
@@ -82,6 +82,10 @@ const toStartSlide = (id) => {
 
 const setImg = (img) => {
   return `./assets/${img}.webp`;
+}
+
+const imageUrl = (image) => {
+  return  new URL(`${image}`, import.meta.url).href
 }
 
 </script>
