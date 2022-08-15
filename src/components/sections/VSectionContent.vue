@@ -41,6 +41,7 @@ const props = defineProps({
 <style lang="scss">
 
 .block {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
@@ -57,6 +58,8 @@ const props = defineProps({
 
   .block-image {
     max-width: 100%;
+    width: 100%;
+    overflow: hidden;
 
     img {
       max-width: 100%;
@@ -90,6 +93,7 @@ const props = defineProps({
 
   .block {
     grid-template-columns: 1fr;
+    padding: 10px;
   }
 
   .revert {
