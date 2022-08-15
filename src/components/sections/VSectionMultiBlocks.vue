@@ -97,4 +97,15 @@ const props = defineProps({
   }
 }
 
+@media (max-width: 900px) {
+
+  .multi-blocks-wrapper {
+
+    &__contents {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
 </style>

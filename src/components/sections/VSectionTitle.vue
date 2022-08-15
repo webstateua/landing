@@ -33,8 +33,6 @@ const props = defineProps({
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  //padding: 200px 20%;
-  //background: url("@/assets/images/burger.webp") no-repeat 50% 0/cover;
 
   &-background {
     height: 100vh;
@@ -49,6 +47,7 @@ const props = defineProps({
   }
 
   &-title {
+    width: min(500px, 100%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,6 +64,22 @@ const props = defineProps({
 
     &__description {
       font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+
+    &-title {
+
+      &__title {
+        font-size: 26px;
+      }
+
+      &__description {
+        font-size: 16px;
+      }
     }
   }
 }
