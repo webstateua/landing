@@ -81,7 +81,7 @@ const toStartSlide = (id) => {
 }
 
 const setImg = (img) => {
-  return `/src/assets/images/${img}.webp`;
+  return `./assets/${img}.webp`;
 }
 
 </script>
