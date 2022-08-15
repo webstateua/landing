@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref, watchEffect} from "vue";
+import {onMounted, ref} from "vue";
 
 
 const sliderPosition = ref(0)
