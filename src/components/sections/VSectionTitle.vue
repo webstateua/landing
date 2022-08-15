@@ -47,23 +47,26 @@ const props = defineProps({
   }
 
   &-title {
-    width: min(500px, 100%);
+    max-width: 1180px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate( -50%, -50%);
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    text-align: center;
-    letter-spacing: 5px;
+    gap: 20px;
+    text-align: start;
 
     &__title {
-      font-size: 48px;
+      font-size: 46px;
+      letter-spacing: 5px;
     }
 
     &__description {
-      font-size: 28px;
+      letter-spacing: 3px;
+      width: min(600px, 100%);
+      font-size: 24px;
     }
   }
 }
