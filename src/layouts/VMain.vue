@@ -17,17 +17,12 @@
             <VCarousel :sliders="sliders"/>
           </template>
           <template v-slot:title>
-            My BURGERS
+            Choose your BURGER
           </template>
           <template v-slot:description>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit iste laudantium minus nostrum qui quidem
             rem sit tempore voluptatem. Adipisci architecto atque deleniti id, inventore ipsa ipsum, laboriosam nesciunt
             nulla provident quisquam recusandae reprehenderit sapiente similique temporibus veritatis voluptas.
-          </template>
-          <template v-slot:buttons>
-            <VButton>
-              Connect
-            </VButton>
           </template>
         </VSectionContent>
         <VSectionContent :class="'test'">
@@ -90,37 +85,41 @@
 </template>
 
 <script setup>
-import burger from '@/assets/images/burger.webp'
+import { reactive } from "vue";
 import VSectionContent from '@/components/sections/VSectionContent.vue'
 import VSectionTitle from '@/components/sections/VSectionTitle.vue'
 import VCarousel from '@/components/VCarousel.vue'
-import { reactive } from "vue";
+import burger1 from '@/assets/images/burgers/8aa7d9e5429b506212a04d2bbf5916b1_1.webp'
+import burger2 from '@/assets/images/burgers/233de757428d5e4889fbe482971caf10.webp'
+import burger3 from '@/assets/images/burgers/2115018_1644510398.1914_original.webp'
+import burger4 from '@/assets/images/burgers/burger-vegan_1.webp'
+
 
 
 const sliders = reactive([
   {
     id: 1,
-    title: 'Title 1',
+    title: 'Chicken cheeseburger',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: burger,
+    img: burger1,
   },
   {
     id: 2,
-    title: 'Title 2',
+    title: 'Fishburger',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: burger,
+    img: burger2,
   },
   {
     id: 3,
-    title: 'Title 3',
+    title: 'Villageger',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: burger,
+    img: burger3,
   },
   {
     id: 4,
-    title: 'Title 4',
+    title: 'Blackhole burger',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: burger,
+    img: burger4,
   },
 ])
 
