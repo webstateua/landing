@@ -102,25 +102,25 @@ const sliders = reactive([
     id: 1,
     title: 'Title 1',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: 'burger.webp',
+    img: '@/assets/images/burger.webp',
   },
   {
     id: 2,
     title: 'Title 2',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: 'burger.webp',
+    img: '@/assets/images/burger.webp',
   },
   {
     id: 3,
     title: 'Title 3',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: 'burger.webp',
+    img: '@/assets/images/burger.webp',
   },
   {
     id: 4,
     title: 'Title 4',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, veritatis.',
-    img: 'burger.webp',
+    img: '@/assets/images/burger.webp',
   },
 ])
 
