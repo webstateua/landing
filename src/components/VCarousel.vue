@@ -17,7 +17,7 @@
             <div class="img_wrapper__prevBtn" @click="prevSlide(slide.id)">
               <img src="@/assets/images/icons/arrowLeft.png" alt="arrow">
             </div>
-            <img :src="slide.img"
+            <img :src="getImageUrl(slide.img)"
                  class="slider_image"
                  alt="slider image">
             <div class="img_wrapper__nextBtn" @click="nextSlide(slide.id)">
@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watchEffect} from "vue";
 
 
 const sliderPosition = ref(0)
@@ -78,6 +78,10 @@ const prevSlide = (id) => {
 const toStartSlide = (id) => {
   selectedSlide.value = id
   sliderPosition.value -= ((sliderWidth.value) + 18) * props.sliders.length
+}
+
+const getImageUrl = (name) => {
+  return new URL(`../../assets/images/${name}`, import.meta.url).href
 }
 
 </script>
