@@ -2,7 +2,10 @@
   <menu>
     <div class="desktop-menu">
       <div class="desktop-menu-icons">
-        <img src="@/assets/images/icons/social/telegram_dark.png" alt="telegram icon" class="desktop-menu-icons__icon">
+        <img @click="RouteToLink('https://t.me/webstate')"
+             src="@/assets/images/icons/social/telegram_dark.png"
+             alt="telegram icon" class="desktop-menu-icons__icon"
+        >
         <img src="@/assets/images/icons/social/instagram_dark.png" alt="instagram icon"
              class="desktop-menu-icons__icon">
         <img src="@/assets/images/icons/social/facebook_dark.png" alt="facebook icon" class="desktop-menu-icons__icon">
@@ -16,7 +19,10 @@
     <div v-if="openedMenu" class="menu-wrapper">
       <div class="menu">
         <div class="menu-icons">
-          <img src="@/assets/images/icons/social/telegram_dark.png" alt="telegram icon" class="menu-icons__icon">
+          <img @click="RouteToLink('https://t.me/webstate')"
+               src="@/assets/images/icons/social/telegram_dark.png"
+               alt="telegram icon" class="menu-icons__icon"
+          >
         </div>
         <div class="menu-icons">
           <img src="@/assets/images/icons/social/instagram_dark.png" alt="instagram icon"
@@ -33,9 +39,11 @@
 <script setup>
 import VIconNav from '@/components/icons/VIconNav.vue'
 import {ref} from "vue";
+import RouteToLink from "@/utils/routeToLink.js";
 
 
 const openedMenu = ref(false)
+
 
 </script>
 

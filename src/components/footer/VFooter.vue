@@ -4,7 +4,9 @@
       <div class="footer">
         WebState
         <div class="footer-icons">
-          <img src="@/assets/images/icons/social/telegram_dark.png" alt="telegram icon" class="footer-icons__icon">
+          <img @click="RouteToLink('https://t.me/webstate')"
+               src="@/assets/images/icons/social/telegram_dark.png"
+               alt="telegram icon" class="footer-icons__icon">
           <img src="@/assets/images/icons/social/instagram_dark.png" alt="instagram icon"
                class="footer-icons__icon">
           <img src="@/assets/images/icons/social/facebook_dark.png" alt="facebook icon" class="footer-icons__icon">
@@ -15,8 +17,7 @@
 </template>
 
 <script setup>
-
-
+import RouteToLink from "@/utils/routeToLink.js";
 
 </script>
 
